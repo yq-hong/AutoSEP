@@ -1,6 +1,6 @@
 # Unlabeled Data Improves Fine-Grained Image Zero-shot Classification with Multimodal LLMs
 
-## Important environment requirements
+## Environment Setup
 ```
 conda create -n autosep python=3.9
 pip install -r requirements.txt
