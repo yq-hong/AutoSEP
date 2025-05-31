@@ -3,6 +3,7 @@
 ## Environment Setup
 ```
 conda create -n autosep python=3.9
+conda activate autosep
 pip install -r requirements.txt
 ```
 
