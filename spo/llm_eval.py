@@ -57,10 +57,10 @@ def prompt_spo_compare(ex, pos_idx, neg_idx, attr_pos, attr_neg, task_name='CUB_
         pred_prompt = prompts.CUB_oriole
     elif task_name == 'Stanford_terrier':
         pred_prompt = prompts.Stanford_terrier
-    elif task_name == 'vegfru_1':
-        pred_prompt = prompts.vegfru_1
-    elif task_name == 'vegfru_2':
-        pred_prompt = prompts.vegfru_2
+    elif task_name == 'vegfru_greens':
+        pred_prompt = prompts.vegfru_greens
+    elif task_name == 'vegfru_allium':
+        pred_prompt = prompts.vegfru_allium
     else:
         raise Exception(f"Unsupported task: {task_name}")
 
@@ -109,7 +109,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
                         choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
-                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_1', 'vegfru_2'])
+                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--out_num', default='0')
     parser.add_argument('--max_threads', default=8, type=int)

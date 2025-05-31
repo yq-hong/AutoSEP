@@ -21,7 +21,7 @@ def parser_args():
     parser.add_argument('--device', type=str, default='cuda:0', help='device')
     parser.add_argument('--task_name', default='CUB_cuckoo',
                         choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
-                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_1', 'vegfru_2'])
+                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--data_dir', default='/datasets')
     parser.add_argument('--mode', default='test')

@@ -16,7 +16,7 @@ CUB_vireo = '''I'm trying to write a prompt used to generate description for the
 Stanford_terrier = '''I'm trying to write a prompt used to generate description for the dog in the image, where the generated description can enhance the zero-shot classification of the dog in the image.
         The three types of birds are: A. Lakeland Terrier, B. Norwich Terrier, C. Cairn Terrier.
         '''
-vegfru_1 = '''I'm trying to write a prompt used to generate description for the vegetable in the image, where the generated description can enhance the zero-shot classification of the vegetable in the image.
+vegfru_greens = '''I'm trying to write a prompt used to generate description for the vegetable in the image, where the generated description can enhance the zero-shot classification of the vegetable in the image.
         The three types of flowers are: A. Dandelion, B. Shepherd's purse, C. Prickly lettuce.'''
-vegfru_2 = '''I'm trying to write a prompt used to generate description for the vegetable in the image, where the generated description can enhance the zero-shot classification of the vegetable in the image.
+vegfru_allium = '''I'm trying to write a prompt used to generate description for the vegetable in the image, where the generated description can enhance the zero-shot classification of the vegetable in the image.
         The three types of flowers are: A. Leek, B. Green Chinese onion, C. Bunching onion.'''

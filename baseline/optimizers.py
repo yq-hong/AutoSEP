@@ -92,10 +92,10 @@ class ProTeGi(PromptOptimizer):
             gradient_prompt = prompts.CUB_oriole
         elif self.opt['task_name'] == 'Stanford_terrier':
             gradient_prompt = prompts.Stanford_terrier
-        elif self.opt['task_name'] == 'vegfru_1':
-            gradient_prompt = prompts.vegfru_1
-        elif self.opt['task_name'] == 'vegfru_2':
-            gradient_prompt = prompts.vegfru_2
+        elif self.opt['task_name'] == 'vegfru_greens':
+            gradient_prompt = prompts.vegfru_greens
+        elif self.opt['task_name'] == 'vegfru_allium':
+            gradient_prompt = prompts.vegfru_allium
         else:
             raise Exception(f"Unsupported task: {self.opt['task_name']}")
 
@@ -142,10 +142,10 @@ class ProTeGi(PromptOptimizer):
             transformation_prompt = prompts.CUB_oriole
         elif self.opt['task_name'] == 'Stanford_terrier':
             transformation_prompt = prompts.Stanford_terrier
-        elif self.opt['task_name'] == 'vegfru_1':
-            transformation_prompt = prompts.vegfru_1
-        elif self.opt['task_name'] == 'vegfru_2':
-            transformation_prompt = prompts.vegfru_2
+        elif self.opt['task_name'] == 'vegfru_greens':
+            transformation_prompt = prompts.vegfru_greens
+        elif self.opt['task_name'] == 'vegfru_allium':
+            transformation_prompt = prompts.vegfru_allium
         else:
             raise Exception(f"Unsupported task: {self.opt['task_name']}")
 

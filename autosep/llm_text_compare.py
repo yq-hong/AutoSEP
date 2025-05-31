@@ -81,7 +81,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
                         choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
-                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_1', 'vegfru_2'])
+                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--out_num', default='0')
     parser.add_argument('--max_threads', default=8, type=int)
@@ -106,6 +106,7 @@ def get_args():
 if __name__ == '__main__':
     args = get_args()
     score_address = f"compare/text_compare/prompt_scores_{args.result_folder}_{args.exp}_{args.task_name}_{args.model}_{args.mode}_{args.n_test}_{args.n_compare}.json"
+    os.makedirs(os.path.dirname(score_address), exist_ok=True)
     prompt_test_address = f"../{args.result_folder}/results/{args.exp}_{args.task_name}/{args.exp}_test_attr.json"
     prompt_address = f"../{args.result_folder}/results/{args.exp}_{args.task_name}/{args.exp}_{args.mode}_attr.json"
 

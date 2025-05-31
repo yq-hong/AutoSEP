@@ -42,12 +42,12 @@ def get_class_options(args):
         text = "Your task is to classify the image to three dogs: A. Lakeland Terrier, B. Norwich Terrier, C. Cairn Terrier.\n"
         choices = ["A", "B", "C"]
         return text, choices
-    elif args.task_name == 'vegfru_1':
+    elif args.task_name == 'vegfru_greens':
         text = "Your task is to classify the image to three vegetables: A. Dandelion, B. Shepherd's purse, C. Prickly lettuce.\n"
         choices = ["A", "B", "C"]
         return text, choices
-    elif args.task_name == 'vegfru_2':
-        text = "Your task is to classify the image to three vegetables: A. Leek, B. SGreen Chinese onion, C. Bunching onion.\n"
+    elif args.task_name == 'vegfru_allium':
+        text = "Your task is to classify the image to three vegetables: A. Leek, B. Green Chinese onion, C. Bunching onion.\n"
         choices = ["A", "B", "C"]
         return text, choices
     else:
@@ -102,7 +102,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
                         choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
-                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_1', 'vegfru_2'])
+                                 'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--data_dir', default='/datasets')
     parser.add_argument('--mode', default='test')

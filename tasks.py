@@ -438,11 +438,11 @@ class VegFruMultiTask(MyClassificationTask):
         super().__init__(data_dir, file_name, max_threads)
         self.train_ratio = args.train_ratio
 
-        if '1' in args.task_name:
+        if 'greens' in args.task_name:
             self.num2classname = ["Dandelion", "Shepherd's purse", "Prickly lettuce"]
             self.directories = ["dandelion", "shepherd's_purse", "prickly_lettuce"]
             self.filtered = {"dandelion": [], }
-        elif '2' in args.task_name:
+        elif 'allium' in args.task_name:
             self.num2classname = ["Leek", "Green Chinese onion", "Bunching onion"]
             self.directories = ["leek", "green_Chinese_onion", "bunching_onion"]
             self.filtered = {}

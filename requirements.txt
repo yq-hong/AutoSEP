@@ -1,0 +1,11 @@
+clip
+google-genai==1.2.0
+google-generativeai==0.8.4
+google-api-core==2.24.1
+openai==1.64.0
+python-liquid==1.13.0
+sglang
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.50.0
+scikit-learn
