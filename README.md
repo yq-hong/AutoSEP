@@ -89,3 +89,5 @@ python main.py --model gemini --gradient_mode gemini --task_name {task_name} --d
 cd spo
 python main.py --model gemini --gradient_mode gemini --task_name {task_name} --data_dir /dataset/location --n_train 30 --test_eval --rounds 10 --beam_size 1 --minibatch_size 7 --n_gradients 1 --errors_per_gradient 3 --mc_samples_per_step 0 --max_expansion_factor 1 --out_num 1
 ```
+
+This repo is originally based on https://github.com/microsoft/LMOps/tree/main/prompt_optimization
