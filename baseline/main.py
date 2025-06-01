@@ -41,7 +41,7 @@ def get_scorer(scorer):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
-                        choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
+                        choices=['iNat_butterfly', 'iNat_lupine', 'Stanford_terrier',
                                  'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--gradient_model', default='gemini')

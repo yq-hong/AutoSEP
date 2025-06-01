@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 ## Models
 For proprietary models, set your API key in `config.py`.  
-To use open-source models like **Qwen2-VL-72B-Instruct**, we use the **SGLang** framework.  
+For open-source models like **Qwen2-VL-72B-Instruct**, we use the **SGLang** framework.  
 Serve the model by running:  
 ```
 bash scripts/launch/Qwen2-VL-72B-Instruct.sh
@@ -23,7 +23,7 @@ python main.py --data_dir ${data_dir} --model gemini --gradient_mode gemini --ta
 ```
 
 ### Prompt evaluation
-Instance-level classification for prompts during the AutoSEP optimization:
+Instance-level classification for prompts:
 
 (Setting `--parallel` will speed up the process.)
 ```
@@ -91,4 +91,4 @@ cd spo
 python main.py --model gemini --gradient_mode gemini --task_name ${task_name} --data_dir ${data_dir} --n_train 30 --test_eval --rounds 10 --beam_size 1 --minibatch_size 7 --n_gradients 1 --errors_per_gradient 3 --mc_samples_per_step 0 --max_expansion_factor 1 --out_num 1
 ```
 
-This repo is originally based on https://github.com/microsoft/LMOps/tree/main/prompt_optimization
+This repo is originally based on [this GitHub repository](https://github.com/microsoft/LMOps/tree/main/prompt_optimization)

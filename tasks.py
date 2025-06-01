@@ -147,7 +147,7 @@ class iNaturalistMultiTask(MyClassificationTask):
             self.directories = ['01976_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Symbrenthia_lilaea',
                                 '01978_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Tegosa_claudina',
                                 '01979_Animalia_Arthropoda_Insecta_Lepidoptera_Nymphalidae_Texola_elada']
-        elif 'grass' in args.task_name:
+        elif 'lupine' in args.task_name:
             self.num2classname = ['Arctic Lupine (Lupinus arcticus)',
                                   'Silvery Lupine (Lupinus argenteus)',
                                   'Arizona Lupine (Lupinus arizonicus)']
@@ -223,7 +223,7 @@ class iNaturalistMultiTask(MyClassificationTask):
             for ex in exs:
                 attrs[f"{ex['id']}"] = attribute_cache[f'{prompt}'][f'{ex}']
         else:
-            with open(f'{self.data_dir}/../autosep/results/{exp}_iNat_grass/{exp}_{mode}_attr.json', 'r') as json_file:
+            with open(f'{self.data_dir}/../autosep/results/{exp}_iNat_lupine/{exp}_{mode}_attr.json', 'r') as json_file:
                 attr = json.load(json_file)
             attrs = {}
             for ex in exs:

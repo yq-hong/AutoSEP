@@ -78,8 +78,8 @@ class ProTeGi(PromptOptimizer):
         """ Get "gradients" for a prompt based on the error string."""
         if self.opt['task_name'] == 'iNat_butterfly':
             gradient_prompt = prompts.iNat_butterfly
-        elif self.opt['task_name'] == 'iNat_grass':
-            gradient_prompt = prompts.iNat_grass
+        elif self.opt['task_name'] == 'iNat_lupine':
+            gradient_prompt = prompts.iNat_lupine
         elif self.opt['task_name'] == 'CUB_cuckoo':
             gradient_prompt = prompts.CUB_cuckoo
         elif self.opt['task_name'] == 'CUB_vireo':
@@ -127,8 +127,8 @@ class ProTeGi(PromptOptimizer):
         """ Incorporate feedback gradient into a prompt."""
         if self.opt['task_name'] == 'iNat_butterfly':
             transformation_prompt = prompts.iNat_butterfly
-        elif self.opt['task_name'] == 'iNat_grass':
-            transformation_prompt = prompts.iNat_grass
+        elif self.opt['task_name'] == 'iNat_lupine':
+            transformation_prompt = prompts.iNat_lupine
         elif self.opt['task_name'] == 'CUB_cuckoo':
             transformation_prompt = prompts.CUB_cuckoo
         elif self.opt['task_name'] == 'CUB_vireo':

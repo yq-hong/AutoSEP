@@ -8,4 +8,4 @@ sglang
 torch==2.5.1
 torchvision==0.20.1
 transformers==4.50.0
-scikit-learn
+scikit-learn==1.5.1

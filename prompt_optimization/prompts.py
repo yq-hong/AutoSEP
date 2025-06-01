@@ -1,7 +1,7 @@
 iNat_butterfly = '''I'm trying to write a prompt used to generate description for the butterfly in the image, where the generated description can enhance the zero-shot classification of the butterfly in the image.
         The three types of butterflies are: A. Symbrenthia lilaea, B. Claudina Crescent, C. Elada Checkerspot.
         '''
-iNat_grass = '''I'm trying to write a prompt used to generate description for the plant in the image, where the generated description can enhance the zero-shot classification of the plant in the image.
+iNat_lupine = '''I'm trying to write a prompt used to generate description for the plant in the image, where the generated description can enhance the zero-shot classification of the plant in the image.
         The three types of plants are: A. Arctic Lupine (Lupinus arcticus), B. Silvery Lupine (Lupinus argenteus), C. Arizona Lupine (Lupinus arizonicus).
         '''
 CUB_cuckoo = '''I'm trying to write a prompt used to generate description for the bird in the image, where the generated description can enhance the zero-shot classification of the bird in the image.

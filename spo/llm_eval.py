@@ -47,8 +47,8 @@ def parse_tagged_text(text, start_tag, end_tag):
 def prompt_spo_compare(ex, pos_idx, neg_idx, attr_pos, attr_neg, task_name='CUB_cuckoo', model_name='gemini'):
     if task_name == 'iNat_butterfly':
         pred_prompt = prompts.iNat_butterfly
-    elif task_name == 'iNat_grass':
-        pred_prompt = prompts.iNat_grass
+    elif task_name == 'iNat_lupine':
+        pred_prompt = prompts.iNat_lupine
     elif task_name == 'CUB_cuckoo':
         pred_prompt = prompts.CUB_cuckoo
     elif task_name == 'CUB_vireo':
@@ -108,7 +108,7 @@ def run_evaluate(exs, pos_idx, neg_idx, attr_pos, attr_neg, task_name, model_nam
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
-                        choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
+                        choices=['iNat_butterfly', 'iNat_lupine', 'Stanford_terrier',
                                  'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--out_num', default='0')

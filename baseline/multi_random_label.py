@@ -34,7 +34,7 @@ def get_class_options(args):
         # choices = ["A. Symbrenthia lilaea", "B. Claudina Crescent", "C. Elada Checkerspot"]
         choices = ["A", "B", "C"]
         return text, choices
-    elif args.task_name == 'iNat_grass':
+    elif args.task_name == 'iNat_lupine':
         text = "Your task is to classify the image to three plants: A. Arctic Lupine (Lupinus arcticus), B. Silvery Lupine (Lupinus argenteus), C. Arizona Lupine (Lupinus arizonicus).\n"
         choices = ["A", "B", "C"]
         return text, choices
@@ -101,7 +101,7 @@ def run_evaluate(predictor, prompt, exs, few_shot_paths):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--task_name', default='CUB_cuckoo',
-                        choices=['iNat_butterfly', 'iNat_grass', 'Stanford_terrier',
+                        choices=['iNat_butterfly', 'iNat_lupine', 'Stanford_terrier',
                                  'CUB_cuckoo', 'CUB_oriole', 'CUB_vireo', 'vegfru_greens', 'vegfru_allium'])
     parser.add_argument('--model', default='gemini', choices=['gemini', 'gpt4o', 'sglang_qwen'])
     parser.add_argument('--data_dir', default='/datasets')
