@@ -92,3 +92,13 @@ python main.py --model gemini --gradient_mode gemini --task_name ${task_name} --
 ```
 
 This repo is originally based on [this GitHub repository](https://github.com/microsoft/LMOps/tree/main/prompt_optimization)
+
+## Cite
+```
+@article{hong2025unlabeled,
+  title={Unlabeled Data Improves Fine-Grained Image Zero-shot Classification with Multimodal LLMs},
+  author={Hong, Yunqi and An, Sohyun and Bai, Andrew and Lin, Neil YC and Hsieh, Cho-Jui},
+  journal={arXiv preprint arXiv:2506.03195},
+  year={2025}
+}
+```
