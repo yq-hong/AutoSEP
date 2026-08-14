@@ -1,3 +1,5 @@
+
+
 # Unlabeled Data Improves Fine-Grained Image Zero-shot Classification with Multimodal LLMs
 
 ## Environment Setup
@@ -31,7 +33,7 @@ cd autosep
 python llm_text_compare.py --evaluate --generate --parallel --result_folder autosep --data_dir ${data_dir} --model gemini --exp 1 --task_name ${task_name} --mode train --n_test 30 --n_compare 10
 ```
 
-Clase-wise classification:
+Class-wise classification:
 ```
 python classification.py --attributes --generate --parallel --result_folder autosep --data_dir ${data_dir} --model gemini --exp 1 --task_name ${task_name} --mode test --n_test 30 --prompt_idx 10 --out_num 1
 ```
